@@ -1,0 +1,148 @@
+
+
+.change_color {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-size: 20px !important;
+    align-self: end;
+    justify-content: safe ;
+    margin: auto;
+    margin-left: 10px;
+    grid-area: 1;
+}
+
+.black_white {
+    grid-area: 1/2;
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.white_black {
+    grid-area: 1/3;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.blue_blue_light {
+    grid-area: 1/4;
+    background-color: #c3cde6 !important;
+    color: #000047 !important;
+}
+
+.change_color_text {
+    grid-area: 1/1;
+    font-size: 16px !important;
+    align-content: baseline;
+    padding: 10px;
+}
+
+.change_font_size {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.change_font_size_text {
+    grid-area: 1/1;
+    font-size: 16px !important;
+    align-self: center;
+    align-content: baseline;
+    padding: 10px;
+}
+
+.go_back {
+    grid-area: 3;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border: 2px solid;
+    padding: 5px;
+    margin: 20px 10px;
+    font-size: 16px;
+}
+
+.font_20 {
+    font: 16px/1.4 'Georgia';
+}
+
+.font_28 {
+    font: 18px/1.4 'Georgia';
+}
+
+.font_36 {
+    font: 22px/1.4 'Georgia';
+}
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 200px;
+    background: black;
+    color: #fff;
+}
+.header span {
+    color: white;
+    border: 1px solid white;
+    margin-left: 25px;
+    font-weight: bolder;
+    padding: 3px 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 8px auto;
+    align-content: baseline;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+@media screen and (min-width: 420px) {
+
+    .font_20 {
+        font: 24px/1.4 'Georgia';
+    }
+    .font_28 {
+        font: 28px/1.4 'Georgia';
+    }
+    .font_36 {
+        font: 36px/1.4 'Georgia';
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-rows: 1fr 1fr 0.5fr;
+        height: 250px;
+    }
+    .font_20 {
+        font: 24px/1.4 'Georgia';
+    }
+    .font_28 {
+        font: 28px/1.4 'Georgia';
+    }
+    .font_36 {
+        font: 36px/1.4 'Georgia';
+    }
+    .text {
+        padding: 0 10% 0 20%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.7fr;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .change_font_size_text,
+    .change_color_text,
+    .go_back {
+        font-size: 20px !important;
+    }
+}

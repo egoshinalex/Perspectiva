@@ -1,0 +1,57 @@
+.menu-burger__header {
+    position: relative; /* задаем относительное позиционирование */
+    width: 40px; /* определяем размеры блока */
+    height: 45px;
+    display: block;
+    cursor: pointer;
+}
+.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.menu-burger__header span{
+    top: 14px;
+}
+
+.menu-burger__header:after, .menu-burger__header:before{
+    content: '';
+}
+
+.menu-burger__header:after{
+    bottom: 10px;
+}
+.menu-burger__header:before{
+    top: 10px;
+}
+
+.menu-burger__header.open-menu span {
+    opacity:0;
+    transition: 0.5s;
+}
+
+.menu-burger__header.open-menu:before {
+    transform: rotate(38deg);
+    top: 26px;
+    transition: 0.4s;
+}
+
+.menu-burger__header.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+}
+
+.menu.open-menu {
+    left: 150px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-burger__header {
+        display: none;
+    }
+}

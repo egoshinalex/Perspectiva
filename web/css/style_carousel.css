@@ -1,0 +1,33 @@
+.ar {
+    display: block;
+    width: min-content;
+}
+.arrow_svg_1
+{
+    margin-top: 30%;
+    position: absolute;
+}
+.arrow_svg_2
+{
+    margin-top: 30%;
+    position: absolute;
+    right: 10px;
+}
+.arrow {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    margin-top: 15%;
+    right: -12px;
+}
+@media screen and (min-width: 768px) {
+    .arrow_svg_1, .arrow_svg_2 {
+        margin-top: 35%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .arrow_svg_1, .arrow_svg_2 {
+        margin-top: 15%;
+    }
+}

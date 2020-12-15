@@ -1,0 +1,96 @@
+.header {
+    display: grid;
+    align-items: end;
+    align-content: inherit;
+    margin: 40px 50px 0 85%;
+}
+
+.menu {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 0.5fr/none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+    padding: 20px;
+    left: 200%;
+    transition: all 0.8s ease;
+    background: #000;
+    width: 50%;
+    text-align: center;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    margin-top: -70px;
+}
+
+.vfb, .info_about{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font: 16px/1.4 'Georgia';
+}
+
+.social_net {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 5px 5px 0 5px;
+    border-radius: 20px;
+}
+
+.header span {
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    text-align: center;
+    margin: 8px auto;
+    align-content: baseline;
+}
+
+.logo {
+    width: 40%;
+}
+@media screen and (min-width: 420px) {
+
+    logo {
+        margin: 0 30px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .menu {
+        display: grid;
+        grid-template: none/0.5fr 1fr 1fr 0.7fr;
+        height: 120px;
+        align-items: start;
+        width: 95%;
+        background: none;
+        left: 0;
+    }
+    .logo {
+        width: 80%;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .vfb, .info_about{
+        font: 18px/1.4 'Georgia';
+    }
+}
+
+
